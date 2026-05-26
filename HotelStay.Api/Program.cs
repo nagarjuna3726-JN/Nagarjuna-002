@@ -14,7 +14,7 @@ builder.Services.AddScoped<BookingValidationService>();
 builder.Services.AddOpenApi();
 builder.Services.AddSwaggerGen();
 
-var app = builder.CreateSlateBuilder();
+var app = builder.Build();
 
 if (app.Environment.IsDevelopment())
 {
